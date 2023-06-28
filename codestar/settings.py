@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['django-blog-lb.herokuapp.com', 'localhost', '8000-louibens-djangoblog-k5u0f7rzttt.ws-eu101.gitpod.io', 'django-blog-lb-7bc416a2a8ea.herokuapp.com']
-
+CSRF_TRUSTED_ORIGINS = ['https://8000-louibens-djangoblog-k5u0f7rzttt.ws-eu101.gitpod.io']
 
 # Application definition
 
@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'django_summernote',
     'blog',
 ]
 
